@@ -94,6 +94,10 @@ main p.question {
   background-position-x: 321px;
 }
 
+main p.question:hover {
+  color: var(--hovertext);
+}
+
 main p.answer {
   display: none;
 }

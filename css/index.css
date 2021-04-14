@@ -33,7 +33,7 @@ body {
 
 #container {
   max-width: 920px;
-  height: 508px;
+  min-height: 508px;
   margin: auto auto;
   display: flex;
   align-items: flex-start;
@@ -106,6 +106,10 @@ main .divider {
   border-top: 1px solid hsl(240, 5%, 91%);
 }
 
-.active {
+main .divider:last-of-type {
+  padding-bottom: 50px;
+}
+
+p.question.active {
   font-weight: 700;
 }

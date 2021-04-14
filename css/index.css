@@ -130,19 +130,39 @@ p.question.active {
     margin-top: 147px;
     padding-top: 0;
     background-image: url("../images/bg-pattern-mobile.svg");
-    background-position-x: calc(50% + 13px);
+    background-position-x: calc(50% + 2px);
     background-position-y: 4px;
     max-width: 90vw;
+    min-width: 290px;
+    margin-bottom: 50px;
   }
   #container > #wrapper > img {
     display: none;
   }
-
   #container > #box {
     display: none;
   }
   #mobile {
     display: block;
     margin-top: -105px;
+    margin-left: -25px;
+  }
+  main {
+    padding: 34px 60px 0 60px;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  main p {
+    width: 260px;
+  }
+  main p.question {
+    background-position-y: 25px;
+    background-position-x: 246px;
+  }
+  main h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 24px;
   }
 }

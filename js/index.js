@@ -1,38 +1,31 @@
 // function to show and hide answers when questions are clicked
 
 function showAnswer() {
-  const questions = document.querySelectorAll("p.question");
+  const questions = document.querySelectorAll(".question");
   questions.forEach((question) => {
     question.addEventListener("click", () => {
-      question.classList.toggle = "active";
-      console.log(question.classList);
-      const answer = question.nextElementSibling;
-      answer.style.display = "block";
+      let activated = document.querySelector(".active");
+      if (activated === null) {
+        questions.forEach((question) => {
+          question.classList.remove = "active";
+        });
+        question.classList.add = "active";
+        activated = document.querySelector(".active");
+        activated.style.fontWeight = "700";
+        const answer = question.nextElementSibling;
+        answer.style.display = "block";
+      } else {
+        question.classList.remove = "active";
+        const answer = question.nextElementSibling;
+        answer.style.display = "none";
+      }
     });
   });
 }
-
-//   const hamburgerButton = document.querySelector("#hamburger");
-//   hamburgerButton.addEventListener("click", () => {
-//     const subMenuButtons = document.querySelectorAll("header ul li");
-//     hamburgerButton.classList.toggle("activeHamburger");
-//     const activatedHamburger = document.querySelector(".activeHamburger");
-//     if (activatedHamburger === null) {
-//       subMenuButtons.forEach((subMenu) => {
-//         subMenu.style.display = "none";
-//         subMenu.style.zIndex = "1";
-//       });
-//       hamburgerButton.style.color = "#f5f5f5";
-//     } else {
-//       subMenuButtons.forEach((subMenu) => {
-//         subMenu.style.display = "block";
-//         subMenu.style.zIndex = "1";
-//         subMenu.style.paddingTop = "15px";
-//       });
-//       hamburgerButton.style.color = "#ff9b51";
-//     }
-//   });
-// }
+//   question.classList.toggle = "active";
+//   console.log(question.classList);
+//   const answer = question.nextElementSibling;
+//   answer.style.display = "block";
 
 // call showAnswer function when DOM has loaded
 

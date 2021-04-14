@@ -105,3 +105,11 @@ main p.answer {
 main .divider {
   border-top: 1px solid hsl(240, 5%, 91%);
 }
+
+p.question.active {
+  font-weight: 700;
+}
+
+p.answer.active {
+  display: block;
+}

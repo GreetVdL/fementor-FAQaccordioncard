@@ -137,8 +137,6 @@ p.question.active {
     max-width: 90vw;
     min-width: 290px;
     margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: auto;
   }
   #container > #wrapper > img {
     display: none;
@@ -156,6 +154,9 @@ p.question.active {
   }
   main p.question:hover {
     color: var(--text);
+  }
+  main h1 {
+    padding-top: 35px;
   }
 }
 
@@ -175,7 +176,7 @@ p.question.active {
   }
   main h1 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 24px;
   }
 }

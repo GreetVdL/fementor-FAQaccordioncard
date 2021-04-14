@@ -4,7 +4,8 @@
 
 This is a solution to the [FAQ accordion card](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam) newbie challenge on [Frontend Mentor](https://www.frontendmentor.io/solutions). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Aside from CSS, this challenge includes some JavaScript functionality. I made the design fully responsive for desktop, tablet and mobile.
+This challenge includes some JavaScript functionality too.
+I made the design fully responsive for desktop, tablet and mobile.
 
 My solution can be viewed on [https://fementor-faqaccordioncard.vercel.app/](https://fementor-faqaccordioncard.vercel.app/) and on my [Frontend Mentor profile](https://www.frontendmentor.io/profile/GreetVdL).
 

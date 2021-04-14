@@ -92,6 +92,7 @@ main p.question {
   background-repeat: no-repeat;
   background-position-y: 20px;
   background-position-x: 321px;
+  cursor: pointer;
 }
 
 main p.question:hover {

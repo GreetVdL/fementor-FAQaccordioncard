@@ -11,10 +11,13 @@ function showAnswer() {
       }
       questions.forEach((question) => {
         question.classList.remove("active");
+        question.style.backgroundImage = "url(../images/icon-arrow-down.svg)";
         question.nextElementSibling.style.display = "none";
       });
       if (!isActive) {
         question.classList.add("active");
+        question.style.backgroundImage = "url(../images/icon-arrow-up.png)";
+        question.style.backgroundSize = "10px";
         question.nextElementSibling.style.display = "block";
       }
     });

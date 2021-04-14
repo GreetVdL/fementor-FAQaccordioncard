@@ -22,7 +22,7 @@ html {
 body {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: linear-gradient(
     0deg,
@@ -34,7 +34,7 @@ body {
 #container {
   max-width: 920px;
   min-height: 508px;
-  margin: auto auto;
+  margin-top: calc(50vh - 253px);
   display: flex;
   align-items: flex-start;
   background-color: #ffffff;

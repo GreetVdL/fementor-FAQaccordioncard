@@ -150,6 +150,9 @@ p.question.active {
   main {
     padding: 34px 60px 0 60px;
   }
+  main p.question:hover {
+    color: var(--text);
+  }
 }
 
 @media screen and (max-width: 486px) {

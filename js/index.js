@@ -4,28 +4,16 @@ function showAnswer() {
   const questions = document.querySelectorAll(".question");
   questions.forEach((question) => {
     question.addEventListener("click", () => {
-      let activated = document.querySelector(".active");
-      if (activated === null) {
-        questions.forEach((question) => {
-          question.classList.remove = "active";
-        });
-        question.classList.add = "active";
-        activated = document.querySelector(".active");
-        activated.style.fontWeight = "700";
-        const answer = question.nextElementSibling;
+      question.classList.toggle("active");
+      const activated = document.querySelector(".active");
+      if (activated !== null) {
+        const answer = activated.nextElementSibling;
         answer.style.display = "block";
-      } else {
-        question.classList.remove = "active";
-        const answer = question.nextElementSibling;
-        answer.style.display = "none";
+        console.log(activated);
       }
     });
   });
 }
-//   question.classList.toggle = "active";
-//   console.log(question.classList);
-//   const answer = question.nextElementSibling;
-//   answer.style.display = "block";
 
 // call showAnswer function when DOM has loaded
 

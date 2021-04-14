@@ -42,7 +42,7 @@ body {
   background-color: #ffffff;
   border-radius: 18px;
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* before 1.2rem*/
   color: var(--text);
   /* overflow: hidden; */
   padding-top: 70px;
@@ -80,9 +80,9 @@ main {
 }
 
 main h1 {
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-weight: 700;
-  padding-bottom: 48px;
+  padding-bottom: 20px;
 }
 
 main p {
@@ -156,6 +156,9 @@ p.question.active {
 }
 
 @media screen and (max-width: 486px) {
+  #container {
+    font-size: 1.2rem;
+  }
   main p {
     width: 260px;
   }

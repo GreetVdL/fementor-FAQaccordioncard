@@ -135,6 +135,8 @@ p.question.active {
     max-width: 90vw;
     min-width: 290px;
     margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
   }
   #container > #wrapper > img {
     display: none;
